@@ -1,0 +1,197 @@
+﻿@using UygunsuzlukRaporuProjesi.Enums;
+@model UygunsuzlukRaporuProjesi.Models.Unsuitability
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Unsuitability</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="UnsuitabilityNumber" />
+            <div class="form-group">
+                <label asp-for="UnsuitabilityType" class="control-label"></label>
+                @Html.DropDownList("UnsuitabilityType",
+                Html.GetEnumSelectList<UnsuitabilityType>(),
+                "Select Unsuitability Type",new { @class = "form-control" })
+                <span asp-validation-for="UnsuitabilityType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderNumber" class="control-label"></label>
+                <input asp-for="OrderNumber" class="form-control" />
+                <span asp-validation-for="OrderNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectNumber" class="control-label"></label>
+                <input asp-for="ProjectNumber" class="form-control" />
+                <span asp-validation-for="ProjectNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WorkOrderNumber" class="control-label"></label>
+                <input asp-for="WorkOrderNumber" class="form-control" />
+                <span asp-validation-for="WorkOrderNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PartNumber" class="control-label"></label>
+                <input asp-for="PartNumber" class="form-control" />
+                <span asp-validation-for="PartNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnsuitabilityData" class="control-label"></label>
+                <input asp-for="UnsuitabilityData" class="form-control" />
+                <span asp-validation-for="UnsuitabilityData" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PartRevisionNumber" class="control-label"></label>
+                <input asp-for="PartRevisionNumber" class="form-control" />
+                <span asp-validation-for="PartRevisionNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnsuitabilityDetectedCenterNumber" class="control-label"></label>
+                <input asp-for="UnsuitabilityDetectedCenterNumber" class="form-control" />
+                <span asp-validation-for="UnsuitabilityDetectedCenterNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnsuitabilityDetectedOperationNumber" class="control-label"></label>
+                <input asp-for="UnsuitabilityDetectedOperationNumber" class="form-control" />
+                <span asp-validation-for="UnsuitabilityDetectedOperationNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductionQuantity" class="control-label"></label>
+                <input asp-for="ProductionQuantity" class="form-control" />
+                <span asp-validation-for="ProductionQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcceptedQuantity" class="control-label"></label>
+                <input asp-for="AcceptedQuantity" class="form-control" />
+                <span asp-validation-for="AcceptedQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnsuitabilityQuantity" class="control-label"></label>
+                <input asp-for="UnsuitabilityQuantity" class="form-control" />
+                <span asp-validation-for="UnsuitabilityQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnsuitabilePersonel" class="control-label"></label>
+                <input asp-for="UnsuitabilePersonel" class="form-control" />
+                <span asp-validation-for="UnsuitabilePersonel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnsuitabileSection" class="control-label"></label>
+                <input asp-for="UnsuitabileSection" class="form-control" />
+                <span asp-validation-for="UnsuitabileSection" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SerialNumber" class="control-label"></label>
+                <input asp-for="SerialNumber" class="form-control" />
+                <span asp-validation-for="SerialNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerInfo" class="control-label"></label>
+                <input asp-for="CustomerInfo" class="form-control" />
+                <span asp-validation-for="CustomerInfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnsuitabilityDefinition" class="control-label"></label>
+                <input asp-for="UnsuitabilityDefinition" class="form-control" />
+                <span asp-validation-for="UnsuitabilityDefinition" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnsuitabilityIdentifierInfo" class="control-label"></label>
+                <input asp-for="UnsuitabilityIdentifierInfo" class="form-control" />
+                <span asp-validation-for="UnsuitabilityIdentifierInfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnsuitabilityIdentifiingDate" class="control-label"></label>
+                <input asp-for="UnsuitabilityIdentifiingDate" class="form-control" />
+                <span asp-validation-for="UnsuitabilityIdentifiingDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnsuitabilityConfirmerInfo" class="control-label"></label>
+                <input asp-for="UnsuitabilityConfirmerInfo" class="form-control" />
+                <span asp-validation-for="UnsuitabilityConfirmerInfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnsuitabilityConfirmingInfo" class="control-label"></label>
+                <input asp-for="UnsuitabilityConfirmingInfo" class="form-control" />
+                <span asp-validation-for="UnsuitabilityConfirmingInfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmergencySolution" class="control-label"></label>
+                <input asp-for="EmergencySolution" class="form-control" />
+                <span asp-validation-for="EmergencySolution" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmergencySolutionWriterInfo" class="control-label"></label>
+                <input asp-for="EmergencySolutionWriterInfo" class="form-control" />
+                <span asp-validation-for="EmergencySolutionWriterInfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmergencySolutionDate" class="control-label"></label>
+                <input asp-for="EmergencySolutionDate" class="form-control" />
+                <span asp-validation-for="EmergencySolutionDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnsuitabilityCodeAndDescription" class="control-label"></label>
+                <input asp-for="UnsuitabilityCodeAndDescription" class="form-control" />
+                <span asp-validation-for="UnsuitabilityCodeAndDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsCustomerProduct" /> @Html.DisplayNameFor(model => model.IsCustomerProduct)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsDfActivityRequired" /> @Html.DisplayNameFor(model => model.IsDfActivityRequired)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="ActionForRefusingUnsuitability" class="control-label"></label>
+                <input asp-for="ActionForRefusingUnsuitability" class="form-control" />
+                <span asp-validation-for="ActionForRefusingUnsuitability" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ActionForRefusingUnsuitabilityPersonelInfo" class="control-label"></label>
+                <input asp-for="ActionForRefusingUnsuitabilityPersonelInfo" class="form-control" />
+                <span asp-validation-for="ActionForRefusingUnsuitabilityPersonelInfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ActionForRefusingUnsuitabilityDate" class="control-label"></label>
+                <input asp-for="ActionForRefusingUnsuitabilityDate" class="form-control" />
+                <span asp-validation-for="ActionForRefusingUnsuitabilityDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AuditResult" class="control-label"></label>
+                <input asp-for="AuditResult" class="form-control" />
+                <span asp-validation-for="AuditResult" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnsuitabilityDetectorPersonelInfo" class="control-label"></label>
+                <input asp-for="UnsuitabilityDetectorPersonelInfo" class="form-control" />
+                <span asp-validation-for="UnsuitabilityDetectorPersonelInfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnsuitabilityDetectionDate" class="control-label"></label>
+                <input asp-for="UnsuitabilityDetectionDate" class="form-control" />
+                <span asp-validation-for="UnsuitabilityDetectionDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

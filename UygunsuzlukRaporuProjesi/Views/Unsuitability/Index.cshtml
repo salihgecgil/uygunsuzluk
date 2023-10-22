@@ -1,0 +1,227 @@
+﻿@model IEnumerable<UygunsuzlukRaporuProjesi.Models.Unsuitability>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabilityType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WorkOrderNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PartNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabilityData)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PartRevisionNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabilityDetectedCenterNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabilityDetectedOperationNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductionQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AcceptedQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabilityQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabilePersonel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabileSection)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SerialNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerInfo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabilityDefinition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabilityIdentifierInfo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabilityIdentifiingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabilityConfirmerInfo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabilityConfirmingInfo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmergencySolution)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmergencySolutionWriterInfo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmergencySolutionDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabilityCodeAndDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsCustomerProduct)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsDfActivityRequired)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActionForRefusingUnsuitability)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActionForRefusingUnsuitabilityPersonelInfo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActionForRefusingUnsuitabilityDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AuditResult)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabilityDetectorPersonelInfo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnsuitabilityDetectionDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabilityType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjectNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkOrderNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PartNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabilityData)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PartRevisionNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabilityDetectedCenterNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabilityDetectedOperationNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductionQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AcceptedQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabilityQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabilePersonel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabileSection)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SerialNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabilityDefinition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabilityIdentifierInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabilityIdentifiingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabilityConfirmerInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabilityConfirmingInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmergencySolution)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmergencySolutionWriterInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmergencySolutionDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabilityCodeAndDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsCustomerProduct)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsDfActivityRequired)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActionForRefusingUnsuitability)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActionForRefusingUnsuitabilityPersonelInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActionForRefusingUnsuitabilityDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AuditResult)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabilityDetectorPersonelInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnsuitabilityDetectionDate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.UnsuitabilityNumber">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.UnsuitabilityNumber">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.UnsuitabilityNumber">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
